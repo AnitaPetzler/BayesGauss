@@ -32,29 +32,20 @@ allowed open files in the command line via:
 
 $ ulimit -a
 
-...
+...\\
+max memory size         (kbytes, -m) unlimited\\
+open files                      (-n) 256			<-----\\
+pipe size            (512 bytes, -p) 1\\
+...\\
 
-max memory size         (kbytes, -m) unlimited
-
-open files                      (-n) 256			<-----
-
-pipe size            (512 bytes, -p) 1
-
-...
-
-$ ulimit -Sn 10000
-
+$ ulimit -Sn 10000\\
 $ ulimit -a
 
-...
-
-max memory size         (kbytes, -m) unlimited
-
-open files                      (-n) 10000			<-----
-
-pipe size            (512 bytes, -p) 1
-
-...
+...\\
+max memory size         (kbytes, -m) unlimited\\
+open files                      (-n) 10000			<-----\\
+pipe size            (512 bytes, -p) 1\\
+...\\
 
 
 
